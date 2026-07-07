@@ -56,6 +56,19 @@
   .legend{margin-top:10px;font-size:13px;color:var(--muted);}
   .legend .chip{margin-right:6px;}
   .note{font-size:13px;color:var(--muted);margin-top:12px;}
+  .speakers{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .spk{background:#fff;border:1px solid #e5e9ef;border-radius:12px;padding:24px;box-shadow:0 1px 3px rgba(20,40,80,.05);}
+  .spk-head{display:flex;align-items:center;gap:15px;margin-bottom:14px;}
+  .avatar{width:62px;height:62px;border-radius:50%;flex:none;display:flex;align-items:center;
+    justify-content:center;color:#fff;font-weight:700;font-size:22px;letter-spacing:1px;}
+  .av-sp{background:linear-gradient(135deg,#2E75B6,#1F3864);}
+  .av-ce{background:linear-gradient(135deg,#c0392b,#7b241c);}
+  .spk h3{margin:0;font-size:19px;color:var(--navy);}
+  .spk .role{color:var(--muted);font-size:13.5px;margin-top:3px;}
+  .spk .stag{display:inline-block;margin:12px 0 0;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;}
+  .spk p{font-size:14.5px;margin:12px 0 14px;}
+  .spk a.more{font-weight:600;font-size:14px;}
+  @media(max-width:600px){.speakers{grid-template-columns:1fr;}}
   footer{text-align:center;color:var(--muted);font-size:13px;padding:30px;border-top:1px solid #e5e9ef;}
   @media(max-width:600px){.hero h1{font-size:32px;}th,td{padding:8px;font-size:13px;}td.time{width:auto;}}
 </style>
@@ -70,6 +83,7 @@
 
 <nav>
   <a href="#premise">Why We're Here</a>
+  <a href="#speakers">Speakers</a>
   <a href="#agenda">Run of Show</a>
   <a href="#oneonones">1:1s</a>
   <a href="#travel">Travel</a>
@@ -88,6 +102,37 @@
         <li><b>Alignment on 2026-27 targets</b> — one direction across IDA and GSE.</li>
         <li><b>Momentum &amp; relationships</b> — leave energized and connected for the season ahead.</li>
       </ul>
+    </div>
+  </section>
+
+  <section id="speakers">
+    <h2>Guest Speakers</h2>
+    <p class="sub">Two outside voices to sharpen how we sell and grow.</p>
+    <div class="speakers">
+      <div class="spk">
+        <div class="spk-head">
+          <div class="avatar av-sp">JS</div>
+          <div>
+            <h3>John St. Pierre</h3>
+            <div class="role">Author, <em>The 100 Million Dollar Journey</em> · Chairman, BrandPoint Services</div>
+          </div>
+        </div>
+        <p>An entrepreneurial executive with 25 years of leadership experience who has co-founded and scaled two companies past $50M — including <b>Legacy Global Sports</b>, a global youth-sports business. Today he's majority owner and chairman of BrandPoint Services ($100M+) and author of <em>The 100 Million Dollar Journey</em>.</p>
+        <span class="stag c-all">Tuesday · Sales Workshop</span><br>
+        <a class="more" href="https://100mjourney.com/about/john-st-pierre/" target="_blank" rel="noopener">Learn more →</a>
+      </div>
+      <div class="spk">
+        <div class="spk-head">
+          <div class="avatar av-ce">CE</div>
+          <div>
+            <h3>Chuck Ervin</h3>
+            <div class="role">Chief Revenue Officer, Pioneer Sports &amp; Entertainment (PSE)</div>
+          </div>
+        </div>
+        <p>A youth-sports revenue leader based in Raleigh, NC and an Elon University alum, Chuck drives growth at <b>Pioneer Sports &amp; Entertainment</b>. In his own words, "a mentor with a genuine interest in improving youth sports" — bringing a practical, revenue-first lens to how clubs and events sell and scale.</p>
+        <span class="stag c-gse">Wednesday · PSE Training</span><br>
+        <a class="more" href="https://www.linkedin.com/in/chuck-ervin-ba421b15/" target="_blank" rel="noopener">Learn more →</a>
+      </div>
     </div>
   </section>
 
