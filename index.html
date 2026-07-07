@@ -69,6 +69,17 @@
   .spk p{font-size:14.5px;margin:12px 0 14px;}
   .spk a.more{font-weight:600;font-size:14px;}
   @media(max-width:600px){.speakers{grid-template-columns:1fr;}}
+  .dl{margin-top:20px;background:#fff;color:var(--navy);border:none;border-radius:24px;
+    padding:11px 24px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.18);}
+  .dl:hover{background:#eef3fb;}
+  @media print{
+    nav,.dl{display:none!important;}
+    body{background:#fff;}
+    .hero{background:#1F3864!important;}
+    *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
+    section,.day,.spk,.premise{page-break-inside:avoid;}
+    .wrap{padding:16px;}
+  }
   footer{text-align:center;color:var(--muted);font-size:13px;padding:30px;border-top:1px solid #e5e9ef;}
   @media(max-width:600px){.hero h1{font-size:32px;}th,td{padding:8px;font-size:13px;}td.time{width:auto;}}
 </style>
@@ -79,6 +90,7 @@
   <div class="kicker">GSA Summit 2026 · IDA + GSE</div>
   <h1>The Winning Pitch</h1>
   <div class="meta">August 31 – September 2, 2026 &nbsp;·&nbsp; Hyatt Place Boston / Seaport District</div>
+  <button class="dl" onclick="window.print()">⬇&nbsp; Download PDF</button>
 </div>
 
 <nav>
